@@ -4,3 +4,6 @@ dist
 .git
 .gitignore
 .dockerignore
+.env*
+!.env.example
+.gmp_cache
