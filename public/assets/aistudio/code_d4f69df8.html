@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Breathe India – Air Quality Intelligence Platform</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed":"#cce5ff","on-primary":"#ffffff","secondary-fixed-dim":"#93ccff","surface-dim":"#cbdbf5","error":"#ba1a1a","surface-bright":"#f8f9ff","primary":"#005d42","inverse-on-surface":"#eaf1ff","background":"#f8f9ff","inverse-primary":"#7bd8b1","surface":"#f8f9ff","on-primary-container":"#9ffdd3","on-error":"#ffffff","on-error-container":"#93000a","on-tertiary-container":"#e4e9ff","outline":"#6e7a73","tertiary-fixed":"#dae2fd","on-tertiary":"#ffffff","tertiary":"#495167","outline-variant":"#bdc9c1","surface-container-high":"#dce9ff","error-container":"#ffdad6","primary-fixed":"#97f5cc","secondary-container":"#5bb8fe","surface-variant":"#d3e4fe","on-primary-fixed":"#002115","on-secondary-fixed-variant":"#004b73","on-tertiary-fixed":"#131b2e","on-secondary":"#ffffff","primary-container":"#047857","secondary":"#006398","tertiary-fixed-dim":"#bec6e0","surface-container":"#e5eeff","inverse-surface":"#213145","on-primary-fixed-variant":"#00513a","surface-container-low":"#eff4ff","on-secondary-container":"#00476e","on-surface-variant":"#3e4943","on-background":"#0b1c30","surface-container-lowest":"#ffffff","tertiary-container":"#616980","surface-container-highest":"#d3e4fe","on-tertiary-fixed-variant":"#3f465c","surface-tint":"#006c4e","primary-fixed-dim":"#7bd8b1","on-secondary-fixed":"#001d31","on-surface":"#0b1c30"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-lg":"1.5rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1rem","space-md":"1rem","space-sm":"0.5rem","margin":"1rem","margin-lg":"3rem","space-xl":"2.5rem","gutter-md":"1.25rem","margin-md":"2rem"},"fontFamily":{"body-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"headline-metric-xl":["Plus Jakarta Sans"],"headline-metric-xl-mobile":["Plus Jakarta Sans"],"data-tabular-md":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"data-tabular-lg":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-xs":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-metric-xl":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-metric-xl-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-tabular-md":["14px",{"lineHeight":"18px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-tabular-lg":["24px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-xs":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-lg flex items-center justify-between gap-gutter border-b border-outline-variant/30"><div class="flex items-center gap-space-md shrink-0"><img alt="Breathe India Official Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrA8-4ea57gEYn8kEHn_cShlP-1kMTxCDZ6Ix0_SGYWAjneou-FUubbTAwJ8IwJ7NcK8HVDJtna0ZpUvptYMypjWJxu_mgkbJSNe5YWk8UqbPnJQvxNz_Im90Ggr-yBpONWH2jBHZUEwXXJKlvS43uOHHFiBLlDKIkMdZAtngc4ukt4m-vMtWPWOUePR2MtWxH0Kh9FYfHNblZWz7QaVWI3B_pUcpjGcUfMo662H-H8"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Breathe India</span><span class="bg-primary-fixed text-on-primary-fixed font-label-xs text-label-xs px-space-xs py-0.5 rounded-DEFAULT uppercase tracking-wider font-semibold">CPCB Verified</span></div><span class="font-body-sm text-body-sm text-on-surface-variant hidden lg:inline">National Environmental Intelligence Portal | Ministry of Environment &amp; CPCB Aligned</span></div></div><div class="hidden xl:flex items-center bg-surface-container-low rounded-xl px-space-md py-space-xs gap-space-md overflow-hidden max-w-2xl border border-outline-variant/40"><div class="flex items-center gap-space-xs shrink-0"><span class="w-2 h-2 rounded-full bg-error animate-pulse"></span><span class="font-label-xs text-label-xs uppercase tracking-wider text-on-surface-variant font-bold">Live AQI</span></div><div class="flex items-center gap-space-lg font-data-tabular-md text-data-tabular-md text-on-surface whitespace-nowrap overflow-x-auto"><span class="flex items-center gap-1.5">Delhi: <strong class="text-error">312 Very Poor</strong> ⚠️</span><span class="flex items-center gap-1.5">Mumbai: <strong class="text-secondary">142 Moderate</strong> 🟡</span><span class="flex items-center gap-1.5">Bengaluru: <strong class="text-primary-container">48 Good</strong> 🟢</span><span class="flex items-center gap-1.5">Bhopal: <strong class="text-secondary">118 Moderate</strong> 🟡</span><span class="flex items-center gap-1.5">Kolkata: <strong class="text-error">245 Poor</strong> 🟠</span><span class="flex items-center gap-1.5">Srinagar: <strong class="text-primary-container">35 Good</strong> 🟢</span></div></div><div class="flex items-center gap-space-md shrink-0"><div class="relative hidden md:block w-64 lg:w-72"><span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">search</span><input class="w-full pl-9 pr-3 py-1.5 font-body-sm text-body-sm bg-surface-container-low text-on-surface placeholder:text-outline rounded-lg border border-outline-variant/60 focus:outline-none focus:border-secondary transition-colors" placeholder="Search Indian city, district, pin code..." type="text"/></div><div class="flex items-center bg-surface-container-low p-0.5 rounded-lg border border-outline-variant/50 font-label-md text-label-md"><button class="px-2 py-1 rounded bg-surface-container-lowest text-primary font-bold shadow-sm">EN</button><button class="px-2 py-1 text-on-surface-variant hover:text-on-surface transition-colors font-medium">हिन्दी</button></div><button class="flex items-center gap-1.5 px-space-sm py-1.5 bg-error-container text-on-error-container rounded-lg font-label-md text-label-md font-semibold hover:bg-error/20 transition-colors"><span class="material-symbols-outlined text-sm font-bold text-error">warning</span><span class="hidden sm:inline">Alerts</span><span class="w-5 h-5 flex items-center justify-center rounded-full bg-error text-on-error text-label-xs font-bold">3</span></button><div class="flex items-center gap-space-sm pl-space-xs border-l border-outline-variant/40"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeIgJgXiGd18ZYRQbX-dpQ06HkrLtFpq880nLiqVGpO0aNL8WoB_yP973bc_I1vzMrdlhXpr_XqpepJRvaVxQ6RT9Iizp-5V9SG9ntddh_XJdvWc5vnNSSxswXd7KuKGwQOKCu1QQ6cgQXxJzxCt3I0v1ghM3RG3ciCU-Cx6eXkziKPulNO-_qHIdtHsVrOM8r0Ir59GdGorniVz5gg6Cyh-64epjdXB3NC9LXPWc"/><div class="hidden 2xl:flex flex-col"><span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Dr. A. Sharma</span><span class="font-label-xs text-label-xs text-on-surface-variant">Env. Safety Officer</span></div></div></div></div><nav class="h-12 w-full px-gutter-lg flex items-center justify-between overflow-x-auto bg-surface-container-lowest border-b border-outline-variant/20" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-sm"><div class="flex items-center gap-1 shrink-0"><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="national-overview-live-aqi" href="#">National Overview &amp; Live AQI</a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="interactive-map-of-india" href="#">Interactive Map of India</a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="city-comparison" href="#">City Comparison</a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1.5" data-path="find-cleaner-places" href="#">Find Cleaner Places<span class="bg-primary-fixed text-on-primary-fixed text-label-xs px-1.5 py-0.5 rounded-DEFAULT font-bold tracking-tight uppercase">Breathe Better</span></a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap flex items-center gap-1" data-path="ai-air-explainer" href="#">AI Air Explainer<span class="material-symbols-outlined text-sm text-secondary">auto_awesome</span></a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="health-safety-centre" href="#">Health &amp; Safety Centre</a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="forecasts-trends" href="#">Forecasts &amp; Trends</a><a class="font-label-md text-label-md px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="power-bi-analytics" href="#">Power BI Analytics</a></div><div class="hidden lg:flex items-center gap-space-sm pl-4 shrink-0 font-label-xs text-label-xs text-on-surface-variant"><span class="flex items-center gap-1 text-primary font-bold"><span class="material-symbols-outlined text-xs">verified</span> CPCB Validated</span><span>ID: CAAQMS-IN-882</span></div></nav><div class="h-8 w-full bg-surface-container-low px-gutter-lg flex items-center justify-between text-on-surface-variant font-label-xs text-label-xs border-b border-outline-variant/20 overflow-hidden"><div class="flex items-center gap-space-sm truncate"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-semibold text-primary">LIVE DATA FEED:</span><span>Synced with Central Pollution Control Board (CPCB) &amp; SAFAR India</span><span class="text-outline">|</span><span>Last updated: 14 mins ago</span><span class="text-outline hidden sm:inline">|</span><span class="hidden sm:inline font-semibold text-on-surface">482 Active Continuous Ambient Air Quality Stations (CAAQMS) Reporting</span></div><div class="hidden md:flex items-center gap-space-md text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">cloud_sync</span> Auto-refresh: 15m</span></div></div></header><main class="w-full pt-40 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Gradient Container -->
+<div class="relative w-full max-w-7xl mx-auto px-gutter-lg pt-space-md pb-space-xl flex flex-col gap-space-lg">
+<!-- Executive Title & Sub-header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-xs text-label-xs uppercase font-bold tracking-wider">CAAQMS Telemetry</span>
+<span class="flex items-center gap-1 font-label-xs text-label-xs text-primary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+            Telemetry Stream Live
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+          National Air Quality &amp; Pollution Intelligence
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Real-time CPCB telemetry, multi-pollutant dispersion dynamics, and nationwide environmental risk indicators across 482 active stations.
+        </p>
+</div>
+<!-- Quick Action Utilities -->
+<div class="flex items-center gap-2 shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all shadow-sm" id="exportCsvBtn">
+<span class="material-symbols-outlined text-base text-secondary">table_view</span>
+<span>Export CSV / Excel</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-all shadow-sm" id="downloadPdfBtn">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Download Official Bulletin (PDF)</span>
+</button>
+</div>
+</div>
+<!-- Power BI Slicer & Filter Ribbon Tray -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Filter Segment 1: State Filter -->
+<div class="flex flex-col gap-1">
+<label class="font-label-xs text-label-xs uppercase font-bold tracking-wider text-outline" for="stateFilter">State Jurisdiction</label>
+<div class="relative inline-flex">
+<select class="appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-3 pr-8 py-1.5 rounded-lg focus:outline-none focus:bg-surface-container transition-colors cursor-pointer" id="stateFilter">
+<option value="all">All India (National Grid)</option>
+<option value="delhi">Delhi NCR</option>
+<option value="mh">Maharashtra</option>
+<option value="ka">Karnataka</option>
+<option value="mp">Madhya Pradesh</option>
+<option value="wb">West Bengal</option>
+<option value="tn">Tamil Nadu</option>
+<option value="up">Uttar Pradesh</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-sm text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter Segment 2: Time Window Slicer -->
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs uppercase font-bold tracking-wider text-outline">Time Horizon</span>
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg gap-1" id="timeWindowFilter">
+<button class="px-2.5 py-1 text-label-md text-label-md rounded font-bold bg-surface-container-lowest text-primary shadow-xs transition-all" data-window="live">Live Now</button>
+<button class="px-2.5 py-1 text-label-md text-label-md rounded text-on-surface-variant hover:text-on-surface transition-all" data-window="24h">24 Hours</button>
+<button class="px-2.5 py-1 text-label-md text-label-md rounded text-on-surface-variant hover:text-on-surface transition-all" data-window="7d">7 Days</button>
+<button class="px-2.5 py-1 text-label-md text-label-md rounded text-on-surface-variant hover:text-on-surface transition-all" data-window="30d">30 Days Trend</button>
+</div>
+</div>
+<!-- Filter Segment 3: Pollutant Dimension Slicer -->
+<div class="flex flex-col gap-1">
+<span class="font-label-xs text-label-xs uppercase font-bold tracking-wider text-outline">Pollutant Focus</span>
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg gap-1 overflow-x-auto max-w-full" id="pollutantFilter">
+<button class="px-2 py-1 text-label-xs text-label-xs font-bold rounded bg-primary text-on-primary shadow-xs transition-all" data-pollutant="aqi">Overall AQI</button>
+<button class="px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold" data-pollutant="pm25">PM2.5</button>
+<button class="px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold" data-pollutant="pm10">PM10</button>
+<button class="px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold" data-pollutant="no2">NO₂</button>
+<button class="px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold" data-pollutant="so2">SO₂</button>
+<button class="px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold" data-pollutant="co">CO</button>
+<button class="px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold" data-pollutant="o3">Ozone (O₃)</button>
+</div>
+</div>
+<!-- Live Station Health Status -->
+<div class="flex items-center gap-3 pt-2 sm:pt-0">
+<div class="flex flex-col text-right">
+<span class="font-label-xs text-label-xs uppercase tracking-wider text-outline">Telemetry Nodes</span>
+<span class="font-data-tabular-md text-data-tabular-md text-on-surface font-bold">482 / 498 Online</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-xl">sensors</span>
+</div>
+</div>
+</div>
+<!-- KPI Metric Cards Grid: Power BI Executive Dashboard Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- KPI 1: National Average AQI -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">National Avg AQI</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-error-container text-on-error-container font-bold">+12 pts vs 24h</span>
+</div>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-headline-metric-xl text-headline-metric-xl text-secondary font-extrabold" id="kpiNationalAqi">168</span>
+<span class="px-2 py-0.5 rounded text-label-xs font-label-xs font-bold bg-secondary-fixed text-on-secondary-fixed uppercase">Moderate</span>
+</div>
+<div class="flex flex-col gap-1 pt-1">
+<div class="w-full bg-surface-container-low h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full" style="width: 56%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">482 continuous stations aggregated</span>
+</div>
+</div>
+<!-- KPI 2: National Hotspot -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Critical Hotspot</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-error text-on-error font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-error animate-ping"></span> High Alert
+          </span>
+</div>
+<div class="my-2 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-metric-xl text-headline-metric-xl text-error font-extrabold">384</span>
+<span class="px-2 py-0.5 rounded text-label-xs font-label-xs font-bold bg-error-container text-on-error-container uppercase">Very Poor</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Delhi NCR (Anand Vihar)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Dominant: <strong class="text-error">PM2.5</strong></span>
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-on-surface">214 µg/m³</span>
+</div>
+</div>
+<!-- KPI 3: Clean Air Benchmark -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Clean Air Benchmark</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Pristine Zone</span>
+</div>
+<div class="my-2 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-metric-xl text-headline-metric-xl text-primary font-extrabold">24</span>
+<span class="px-2 py-0.5 rounded text-label-xs font-label-xs font-bold bg-primary-fixed text-on-primary-fixed uppercase">Good (Clean)</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Munnar, Kerala</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Ambient PM2.5</span>
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-primary">8 µg/m³ (WHO OK)</span>
+</div>
+</div>
+<!-- KPI 4: Severe / Very Poor Count -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Severe / Very Poor</span>
+<span class="material-symbols-outlined text-error text-lg">warning</span>
+</div>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-headline-metric-xl text-headline-metric-xl text-error font-extrabold">28</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Cities Impacted</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="px-2 py-1 rounded text-label-xs font-label-xs bg-error-container text-on-error-container font-semibold leading-tight">
+            ⚠️ GRAP Stage-III Active in 4 urban clusters
+          </span>
+</div>
+</div>
+<!-- KPI 5: Good / Satisfactory Count -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Good / Satisfactory</span>
+<span class="material-symbols-outlined text-primary text-lg">nature_people</span>
+</div>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-headline-metric-xl text-headline-metric-xl text-primary font-extrabold">84</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Clean Urban Hubs</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="px-2 py-1 rounded text-label-xs font-label-xs bg-surface-container-low text-on-surface-variant font-semibold leading-tight">
+            Predominantly Coastline &amp; Western Ghats
+          </span>
+</div>
+</div>
+</div>
+<!-- Primary Visual Analytics Grid (65% Left / 35% Right on Large Desktops) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN: Power BI Analytical Charts (8 cols / ~67%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Module 1: CPCB 6-Category AQI Distribution Bar & Donut Matrix -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">CPCB 6-Tier National AQI Distribution</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Breakdown of all 482 active CAAQMS ambient monitoring stations</p>
+</div>
+<div class="flex items-center gap-1.5 font-label-xs text-label-xs text-outline font-semibold">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span>IS 5182 Certified</span>
+</div>
+</div>
+<!-- Stacked Horizontal Category Segment Bar -->
+<div class="flex flex-col gap-2">
+<div class="w-full h-7 rounded-lg overflow-hidden flex shadow-xs cursor-pointer select-none" id="distributionStackedBar">
+<div class="bg-primary hover:opacity-90 transition-opacity h-full flex items-center justify-center text-on-primary font-label-xs text-label-xs font-bold" style="width: 18%;" title="Good (0-50): 18% (87 stations)">18%</div>
+<div class="bg-primary-container hover:opacity-90 transition-opacity h-full flex items-center justify-center text-on-primary font-label-xs text-label-xs font-bold" style="width: 29%;" title="Satisfactory (51-100): 29% (140 stations)">29%</div>
+<div class="bg-secondary-container hover:opacity-90 transition-opacity h-full flex items-center justify-center text-on-secondary-container font-label-xs text-label-xs font-bold" style="width: 32%;" title="Moderate (101-200): 32% (154 stations)">32%</div>
+<div class="bg-secondary hover:opacity-90 transition-opacity h-full flex items-center justify-center text-on-secondary font-label-xs text-label-xs font-bold" style="width: 12%;" title="Poor (201-300): 12% (58 stations)">12%</div>
+<div class="bg-error hover:opacity-90 transition-opacity h-full flex items-center justify-center text-on-error font-label-xs text-label-xs font-bold" style="width: 7%;" title="Very Poor (301-400): 7% (34 stations)">7%</div>
+<div class="bg-on-error-container hover:opacity-90 transition-opacity h-full flex items-center justify-center text-on-primary font-label-xs text-label-xs font-bold" style="width: 2%;" title="Severe (&gt;400): 2% (9 stations)">2%</div>
+</div>
+<!-- Legend Pills with Station Counts -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 pt-1">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col gap-0.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-xs text-label-xs font-bold text-on-surface">Good (0-50)</span>
+</div>
+<div class="flex items-baseline justify-between font-data-tabular-md text-data-tabular-md">
+<span class="font-bold text-primary">87</span>
+<span class="font-body-sm text-body-sm text-outline">18%</span>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col gap-0.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-xs text-label-xs font-bold text-on-surface">Satisfactory</span>
+</div>
+<div class="flex items-baseline justify-between font-data-tabular-md text-data-tabular-md">
+<span class="font-bold text-primary-container">140</span>
+<span class="font-body-sm text-body-sm text-outline">29%</span>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col gap-0.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-xs text-label-xs font-bold text-on-surface">Moderate</span>
+</div>
+<div class="flex items-baseline justify-between font-data-tabular-md text-data-tabular-md">
+<span class="font-bold text-secondary">154</span>
+<span class="font-body-sm text-body-sm text-outline">32%</span>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col gap-0.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-xs text-label-xs font-bold text-on-surface">Poor</span>
+</div>
+<div class="flex items-baseline justify-between font-data-tabular-md text-data-tabular-md">
+<span class="font-bold text-secondary">58</span>
+<span class="font-body-sm text-body-sm text-outline">12%</span>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col gap-0.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-xs text-label-xs font-bold text-on-surface">Very Poor</span>
+</div>
+<div class="flex items-baseline justify-between font-data-tabular-md text-data-tabular-md">
+<span class="font-bold text-error">34</span>
+<span class="font-body-sm text-body-sm text-outline">7%</span>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col gap-0.5 hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-on-error-container"></span>
+<span class="font-label-xs text-label-xs font-bold text-on-surface">Severe (&gt;400)</span>
+</div>
+<div class="flex items-baseline justify-between font-data-tabular-md text-data-tabular-md">
+<span class="font-bold text-on-error-container">9</span>
+<span class="font-body-sm text-body-sm text-outline">2%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Module 2: 24-Hour Diurnal Pollution Trend Chart (PM2.5 vs PM10) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">24-Hour Diurnal Trend: PM2.5 vs PM10 Dispersion</h2>
+<span class="px-2 py-0.5 rounded text-label-xs font-label-xs bg-surface-container text-on-surface-variant font-semibold">National Weighted Average</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Illustrates diurnal winter smog inversion peak, afternoon convection dip, and evening nocturnal boundary layer trap</p>
+</div>
+<div class="flex items-center gap-4 shrink-0 font-label-xs text-label-xs font-bold">
+<span class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-error rounded-full inline-block"></span>
+<span>PM2.5 Fine Particles</span>
+</span>
+<span class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-secondary rounded-full inline-block"></span>
+<span>PM10 Coarse Dust</span>
+</span>
+</div>
+</div>
+<!-- Interactive High-Fidelity SVG Diurnal Chart -->
+<div class="relative w-full h-64 bg-surface-container-low rounded-lg p-2 flex flex-col justify-between overflow-hidden">
+<!-- Peak Annotation Badges -->
+<div class="absolute left-[24%] top-4 z-10 px-2 py-0.5 rounded bg-error/90 text-on-error font-label-xs text-label-xs font-bold shadow-xs">
+              Morning Inversion Spike (8:00 AM)
+            </div>
+<div class="absolute left-[54%] bottom-10 z-10 px-2 py-0.5 rounded bg-primary/90 text-on-primary font-label-xs text-label-xs font-bold shadow-xs">
+              Afternoon Dispersal Trough (2:00 PM)
+            </div>
+<div class="absolute right-[12%] top-8 z-10 px-2 py-0.5 rounded bg-error/90 text-on-error font-label-xs text-label-xs font-bold shadow-xs">
+              Evening Smoke Trap (9:30 PM)
+            </div>
+<!-- SVG Curves Canvas -->
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="gradPm25" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ba1a1a" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#ba1a1a" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="gradPm10" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#006398" stop-opacity="0.18"></stop>
+<stop offset="100%" stop-color="#006398" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Subtle Horizontal Reference Gridlines -->
+<line stroke="#bdc9c1" stroke-dasharray="3 3" stroke-opacity="0.4" stroke-width="1" x1="0" x2="800" y1="40" y2="40"></line>
+<line stroke="#bdc9c1" stroke-dasharray="3 3" stroke-opacity="0.4" stroke-width="1" x1="0" x2="800" y1="90" y2="90"></line>
+<line stroke="#bdc9c1" stroke-dasharray="3 3" stroke-opacity="0.4" stroke-width="1" x1="0" x2="800" y1="140" y2="140"></line>
+<line stroke="#bdc9c1" stroke-dasharray="3 3" stroke-opacity="0.4" stroke-width="1" x1="0" x2="800" y1="190" y2="190"></line>
+<!-- WHO Guideline Reference Line (PM2.5 15 µg/m³) -->
+<line stroke="#005d42" stroke-dasharray="4 2" stroke-width="1.5" x1="0" x2="800" y1="185" y2="185"></line>
+<text fill="#005d42" font-family="Inter" font-size="9" font-weight="700" x="10" y="180">WHO Safe 24h Threshold (15 µg/m³)</text>
+<!-- PM10 Area & Curve -->
+<path d="M 0,130 C 80,120 140,50 200,45 C 280,38 340,140 440,150 C 520,158 580,130 660,70 C 720,25 760,65 800,80 L 800,200 L 0,200 Z" fill="url(#gradPm10)"></path>
+<path d="M 0,130 C 80,120 140,50 200,45 C 280,38 340,140 440,150 C 520,158 580,130 660,70 C 720,25 760,65 800,80" stroke="#006398" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- PM2.5 Area & Curve -->
+<path d="M 0,155 C 80,145 140,75 200,68 C 280,60 340,165 440,172 C 520,178 580,150 660,95 C 720,55 760,90 800,105 L 800,200 L 0,200 Z" fill="url(#gradPm25)"></path>
+<path d="M 0,155 C 80,145 140,75 200,68 C 280,60 340,165 440,172 C 520,178 580,150 660,95 C 720,55 760,90 800,105" stroke="#ba1a1a" stroke-linecap="round" stroke-width="3"></path>
+<!-- Key Data Point Markers -->
+<circle cx="200" cy="68" fill="#ba1a1a" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="440" cy="172" fill="#005d42" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="660" cy="95" fill="#ba1a1a" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="200" cy="45" fill="#006398" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="440" cy="150" fill="#006398" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="660" cy="70" fill="#006398" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+</svg>
+<!-- Time Axis Labels -->
+<div class="w-full flex items-center justify-between px-1 text-label-xs font-label-xs text-outline font-semibold border-t border-outline-variant/30 pt-1">
+<span>00:00</span>
+<span>03:00</span>
+<span>06:00 (Rush)</span>
+<span>09:00</span>
+<span>12:00</span>
+<span>15:00 (Solar Max)</span>
+<span>18:00</span>
+<span>21:00</span>
+<span>23:59</span>
+</div>
+</div>
+</div>
+<!-- Module 3: Multi-Pollutant Real-Time Matrix (Grid of 6 Pollutants) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Multi-Pollutant Telemetry Matrix</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time concentration levels measured against National CPCB and WHO Air Quality Guidelines</p>
+</div>
+<span class="px-2.5 py-1 rounded-full text-label-xs font-label-xs bg-surface-container-high text-on-surface font-bold">Ambient Standards</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-md">
+<!-- Pollutant 1: PM2.5 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-2 border-l-4 border-error hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">PM2.5</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-error-container text-on-error-container font-bold">3.5x WHO Limit</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-tabular-lg text-data-tabular-lg font-bold text-error">88</span>
+<span class="font-body-sm text-body-sm text-outline">µg/m³</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-error h-full rounded-full" style="width: 73%"></div>
+</div>
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline">
+<span>CPCB Std: 60</span>
+<span>WHO Std: 15</span>
+</div>
+</div>
+</div>
+<!-- Pollutant 2: PM10 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-2 border-l-4 border-secondary hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">PM10</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-secondary-fixed text-on-secondary-fixed font-bold">1.7x CPCB</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-tabular-lg text-data-tabular-lg font-bold text-secondary">172</span>
+<span class="font-body-sm text-body-sm text-outline">µg/m³</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full" style="width: 65%"></div>
+</div>
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline">
+<span>CPCB Std: 100</span>
+<span>WHO Std: 45</span>
+</div>
+</div>
+</div>
+<!-- Pollutant 3: NO2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-2 border-l-4 border-secondary-container hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">NO₂</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-secondary-fixed text-on-secondary-fixed font-bold">Moderate</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-tabular-lg text-data-tabular-lg font-bold text-on-surface">44</span>
+<span class="font-body-sm text-body-sm text-outline">µg/m³</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary-container h-full rounded-full" style="width: 44%"></div>
+</div>
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline">
+<span>CPCB Std: 80</span>
+<span>Vehicular Peak</span>
+</div>
+</div>
+</div>
+<!-- Pollutant 4: SO2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-2 border-l-4 border-primary hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">SO₂</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Safe Tier</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-tabular-lg text-data-tabular-lg font-bold text-primary">12</span>
+<span class="font-body-sm text-body-sm text-outline">µg/m³</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 15%"></div>
+</div>
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline">
+<span>CPCB Std: 80</span>
+<span>Thermal Compliant</span>
+</div>
+</div>
+</div>
+<!-- Pollutant 5: CO -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-2 border-l-4 border-primary-container hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">CO</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Normal</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-tabular-lg text-data-tabular-lg font-bold text-primary-container">1.8</span>
+<span class="font-body-sm text-body-sm text-outline">mg/m³</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-full" style="width: 45%"></div>
+</div>
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline">
+<span>CPCB 8h: 2.0</span>
+<span>Combustion Low</span>
+</div>
+</div>
+</div>
+<!-- Pollutant 6: Ozone (O3) -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-2 border-l-4 border-secondary-container hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Ozone (O₃)</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-secondary-fixed text-on-secondary-fixed font-bold">Afternoon Surge</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-tabular-lg text-data-tabular-lg font-bold text-secondary">38</span>
+<span class="font-body-sm text-body-sm text-outline">µg/m³</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="w-full bg-outline-variant/30 h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary-container h-full rounded-full" style="width: 38%"></div>
+</div>
+<div class="flex items-center justify-between text-label-xs font-label-xs text-outline">
+<span>CPCB 8h: 100</span>
+<span>Photochemical Ok</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Regional Hotspots & Cleanest Cities (4 cols / ~33%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Citizen Health Advisory Card (Priority Callout) -->
+<div class="bg-gradient-to-br from-surface-container-lowest to-surface-container-low rounded-xl p-space-md shadow-sm border-l-4 border-error flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-xl">health_and_safety</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Actionable Citizen Warning</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            National Composite AQI is <strong class="text-secondary">168 (Moderate)</strong> with critical Northern Plains spikes.
+            <span class="text-error font-semibold">Sensitive individuals, elderly citizens, and children</span> should refrain from heavy morning cardio. 
+            N95 / FFP2 respirators recommended outdoors across NCR and Gangetic basin.
+          </p>
+<div class="flex items-center justify-between pt-1 font-label-xs text-label-xs">
+<span class="text-outline">Air Purifier: Recommended Indoors</span>
+<a class="text-primary font-bold hover:underline flex items-center gap-0.5" data-path="health-safety-centre" href="#">
+              Protocol Guide <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Top 5 Most Polluted Cities Today -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Top 5 Most Polluted</h3>
+</div>
+<span class="font-label-xs text-label-xs text-outline uppercase font-semibold">24h Real-time</span>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<!-- Row 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-error-container/30 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-error text-on-error font-label-xs text-label-xs flex items-center justify-center font-bold">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Delhi NCR</span>
+<span class="font-label-xs text-label-xs text-outline">Anand Vihar • PM2.5</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-error">342</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-error text-on-error font-bold">Very Poor</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-error-container/30 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-error text-on-error font-label-xs text-label-xs flex items-center justify-center font-bold">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Begusarai, Bihar</span>
+<span class="font-label-xs text-label-xs text-outline">Industrial Area • PM2.5</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-error">328</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-error text-on-error font-bold">Very Poor</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-error-container/30 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-error text-on-error font-label-xs text-label-xs flex items-center justify-center font-bold">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Bhiwadi, Rajasthan</span>
+<span class="font-label-xs text-label-xs text-outline">RIICO Phase III • PM10</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-error">316</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-error text-on-error font-bold">Very Poor</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-xs text-label-xs flex items-center justify-center font-bold">4</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Gwalior, MP</span>
+<span class="font-label-xs text-label-xs text-outline">City Centre • PM2.5</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-secondary">284</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-secondary-fixed text-on-secondary-fixed font-bold">Poor</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-xs text-label-xs flex items-center justify-center font-bold">5</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Kanpur, UP</span>
+<span class="font-label-xs text-label-xs text-outline">Nehru Nagar • PM10</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-secondary">272</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-secondary-fixed text-on-secondary-fixed font-bold">Poor</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Top 5 Cleanest Monitored Cities -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Top 5 Cleanest Cities</h3>
+</div>
+<a class="font-label-xs text-label-xs text-primary font-bold hover:underline" data-path="find-cleaner-places" href="#">Explore Clean Air</a>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<!-- Row 1 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed/20 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Gangtok, Sikkim</span>
+<span class="font-label-xs text-label-xs text-outline">Deorali Ridge • Clean Air</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-primary">22</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed/20 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Madikeri / Coorg, KA</span>
+<span class="font-label-xs text-label-xs text-outline">Western Ghats High</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-primary">28</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed/20 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Mysuru, Karnataka</span>
+<span class="font-label-xs text-label-xs text-outline">Hebbal Industrial Base</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-primary">34</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed/20 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">4</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Shillong, Meghalaya</span>
+<span class="font-label-xs text-label-xs text-outline">Laban CAAQMS Node</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-primary">38</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed/20 transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">5</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Tirupati, AP</span>
+<span class="font-label-xs text-label-xs text-outline">SV University Campus</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-data-tabular-md text-data-tabular-md font-bold text-primary">42</span>
+<span class="px-1.5 py-0.5 rounded text-label-xs font-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Data Source, IMD Weather Correlation & Verification Banner -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-xs text-label-xs">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-bold text-primary">CPCB Verified Stream</span>
+<span class="text-outline">#IND-CAAQMS-V4</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-xs text-label-xs">
+<span class="material-symbols-outlined text-secondary text-base">thermostat</span>
+<span><strong>IMD Correlation:</strong> Wind 4.2 km/h • 18°C • Humidity 72%</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-xs text-label-xs">
+<span class="material-symbols-outlined text-outline text-base">history</span>
+<span>Latency: <strong class="text-on-surface">12 mins</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-label-xs font-label-xs text-outline">
+<span>Displaying Live Ambient Sensor Stream</span>
+<button class="text-secondary font-bold hover:underline flex items-center gap-0.5" id="toggleRawTableBtn">
+<span>Show Station Log</span>
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Raw Station Feed Table (Power BI Detailed Data View) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm overflow-hidden transition-all" id="rawTableContainer">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Detailed Station Telemetry Records</span>
+<span class="px-2 py-0.5 rounded text-label-xs bg-surface-container text-on-surface-variant font-bold">Showing 5 of 482 active records</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-outline">
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface text-label-xs font-bold disabled:opacity-50" disabled="">&lt; Prev</button>
+<span class="text-label-xs">Page 1 of 97</span>
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface text-label-xs font-bold">Next &gt;</button>
+</div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-xs text-label-xs uppercase tracking-wider">
+<th class="py-2.5 px-3">Station Code</th>
+<th class="py-2.5 px-3">City &amp; Locality</th>
+<th class="py-2.5 px-3">AQI Score</th>
+<th class="py-2.5 px-3">Category</th>
+<th class="py-2.5 px-3">PM2.5 (µg/m³)</th>
+<th class="py-2.5 px-3">PM10 (µg/m³)</th>
+<th class="py-2.5 px-3">NO₂</th>
+<th class="py-2.5 px-3">Last Verified</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-data-tabular-md text-data-tabular-md">
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-mono text-outline">DL-ANV-01</td>
+<td class="py-2.5 px-3 font-body-md font-semibold text-on-surface">Delhi NCR - Anand Vihar</td>
+<td class="py-2.5 px-3 text-error font-bold">384</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-label-xs bg-error text-on-error font-bold">Very Poor</span></td>
+<td class="py-2.5 px-3 text-error">214.2</td>
+<td class="py-2.5 px-3">342.0</td>
+<td class="py-2.5 px-3">82.4</td>
+<td class="py-2.5 px-3 font-normal text-outline text-body-sm">12 mins ago</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-mono text-outline">MH-BND-04</td>
+<td class="py-2.5 px-3 font-body-md font-semibold text-on-surface">Mumbai - Bandra Kurla Complex</td>
+<td class="py-2.5 px-3 text-secondary font-bold">142</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-label-xs bg-secondary-fixed text-on-secondary-fixed font-bold">Moderate</span></td>
+<td class="py-2.5 px-3 text-secondary">64.0</td>
+<td class="py-2.5 px-3">128.5</td>
+<td class="py-2.5 px-3">41.0</td>
+<td class="py-2.5 px-3 font-normal text-outline text-body-sm">14 mins ago</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-mono text-outline">KA-BTM-02</td>
+<td class="py-2.5 px-3 font-body-md font-semibold text-on-surface">Bengaluru - BTM Layout</td>
+<td class="py-2.5 px-3 text-primary font-bold">48</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span></td>
+<td class="py-2.5 px-3 text-primary">18.2</td>
+<td class="py-2.5 px-3">42.0</td>
+<td class="py-2.5 px-3">19.5</td>
+<td class="py-2.5 px-3 font-normal text-outline text-body-sm">8 mins ago</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-mono text-outline">WB-VIC-01</td>
+<td class="py-2.5 px-3 font-body-md font-semibold text-on-surface">Kolkata - Victoria Memorial</td>
+<td class="py-2.5 px-3 text-secondary font-bold">245</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-label-xs bg-secondary text-on-secondary font-bold">Poor</span></td>
+<td class="py-2.5 px-3 text-secondary">112.8</td>
+<td class="py-2.5 px-3">224.0</td>
+<td class="py-2.5 px-3">54.0</td>
+<td class="py-2.5 px-3 font-normal text-outline text-body-sm">11 mins ago</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50">
+<td class="py-2.5 px-3 font-mono text-outline">KL-MNR-01</td>
+<td class="py-2.5 px-3 font-body-md font-semibold text-on-surface">Munnar - Eravikulam Base</td>
+<td class="py-2.5 px-3 text-primary font-bold">24</td>
+<td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-label-xs bg-primary-fixed text-on-primary-fixed font-bold">Good</span></td>
+<td class="py-2.5 px-3 text-primary">8.0</td>
+<td class="py-2.5 px-3">18.0</td>
+<td class="py-2.5 px-3">6.4</td>
+<td class="py-2.5 px-3 font-normal text-outline text-body-sm">6 mins ago</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Slicer Time Window Selection Behavior
+    const timeButtons = document.querySelectorAll('#timeWindowFilter button');
+    timeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        timeButtons.forEach(b => {
+          b.className = 'px-2.5 py-1 text-label-md text-label-md rounded text-on-surface-variant hover:text-on-surface transition-all';
+        });
+        btn.className = 'px-2.5 py-1 text-label-md text-label-md rounded font-bold bg-surface-container-lowest text-primary shadow-xs transition-all';
+      });
+    });
+
+    // Pollutant Slicer Selection Behavior
+    const pollutantButtons = document.querySelectorAll('#pollutantFilter button');
+    pollutantButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        pollutantButtons.forEach(b => {
+          b.className = 'px-2 py-1 text-label-xs text-label-xs rounded text-on-surface-variant hover:text-on-surface transition-all font-semibold';
+        });
+        btn.className = 'px-2 py-1 text-label-xs text-label-xs font-bold rounded bg-primary text-on-primary shadow-xs transition-all';
+      });
+    });
+
+    // State Filter Dynamic Feed Simulation
+    const stateFilter = document.getElementById('stateFilter');
+    const kpiNationalAqi = document.getElementById('kpiNationalAqi');
+    if (stateFilter && kpiNationalAqi) {
+      stateFilter.addEventListener('change', (e) => {
+        const val = e.target.value;
+        if (val === 'delhi') {
+          kpiNationalAqi.textContent = '342';
+          kpiNationalAqi.className = 'font-headline-metric-xl text-headline-metric-xl text-error font-extrabold';
+        } else if (val === 'ka') {
+          kpiNationalAqi.textContent = '52';
+          kpiNationalAqi.className = 'font-headline-metric-xl text-headline-metric-xl text-primary font-extrabold';
+        } else if (val === 'mh') {
+          kpiNationalAqi.textContent = '138';
+          kpiNationalAqi.className = 'font-headline-metric-xl text-headline-metric-xl text-secondary font-extrabold';
+        } else {
+          kpiNationalAqi.textContent = '168';
+          kpiNationalAqi.className = 'font-headline-metric-xl text-headline-metric-xl text-secondary font-extrabold';
+        }
+      });
+    }
+
+    // Toggle Raw Station Log Data Table
+    const toggleBtn = document.getElementById('toggleRawTableBtn');
+    const tableContainer = document.getElementById('rawTableContainer');
+    if (toggleBtn && tableContainer) {
+      toggleBtn.addEventListener('click', () => {
+        const isHidden = tableContainer.classList.contains('hidden');
+        if (isHidden) {
+          tableContainer.classList.remove('hidden');
+          toggleBtn.querySelector('span:first-child').textContent = 'Hide Station Log';
+        } else {
+          tableContainer.classList.add('hidden');
+          toggleBtn.querySelector('span:first-child').textContent = 'Show Station Log';
+        }
+      });
+    }
+
+    // Export CSV Notification simulation
+    const exportBtn = document.getElementById('exportCsvBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const originalText = exportBtn.innerHTML;
+        exportBtn.innerHTML = '<span class="material-symbols-outlined text-base text-primary">check_circle</span><span>Generating CSV...</span>';
+        setTimeout(() => {
+          exportBtn.innerHTML = originalText;
+        }, 1400);
+      });
+    }
+
+    // Download PDF Bulletin simulation
+    const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+    if (downloadPdfBtn) {
+      downloadPdfBtn.addEventListener('click', () => {
+        const original = downloadPdfBtn.innerHTML;
+        downloadPdfBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">refresh</span><span>Compiling CPCB PDF...</span>';
+        setTimeout(() => {
+          downloadPdfBtn.innerHTML = original;
+        }, 1500);
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface border-t border-outline-variant/30 mt-space-xl"><div class="max-w-7xl mx-auto px-gutter-lg py-margin-md"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter-lg pb-margin border-b border-outline-variant/30"><div class="md:col-span-2 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary font-bold">Breathe India</span><span class="font-label-xs text-label-xs bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded">GOV INITIATIVE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-xl">Official National Environmental Air Intelligence Portal developed in alignment with CPCB, SAFAR India, IMD, and Ministry of Environment, Forest and Climate Change guidelines. Empowers citizens, researchers, and public administrators with verified real-time dispersion indexes.</p><div class="flex flex-wrap items-center gap-space-lg pt-space-xs font-label-sm text-on-surface font-semibold"><div><span class="text-on-surface-variant font-normal">National Helpline: </span><span class="text-primary font-bold">1800-11-CPCB</span></div><div><span class="text-on-surface-variant font-normal">Emergency Asthma Hotline: </span><span class="text-error font-bold">108</span></div></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-1">Portals &amp; Registry</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">CAAQMS Station Registry</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="city-comparison" href="#">City Comparison Matrix</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="power-bi-analytics" href="#">Power BI Analytics Suite</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="find-cleaner-places" href="#">Clean Air Escapes</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider mb-1">Governance &amp; APIs</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Data Methodology</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">CPCB Compliance Standards</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">API Documentation</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Mobile App (iOS / Android)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><p class="text-center sm:text-left">Data sourced from CPCB, SAFAR India, IMD &amp; OpenAQ. Data quality verified. This platform provides public environmental intelligence and safety guidance; consult medical specialists for clinical advice.</p><p class="shrink-0 font-label-xs text-label-xs">© 2025 Central Pollution Control Board (CPCB) India.</p></div></div></footer></body></html>

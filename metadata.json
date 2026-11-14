@@ -1,0 +1,6 @@
+{
+  "name": "Meridian Studio",
+  "description": "Multimodal AI production, 3D scene studio, Google Maps explorer, and interactive game suite.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
